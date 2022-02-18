@@ -4,7 +4,7 @@ function Jumbotron(props) {
   return (
     <div className="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center">
         <div className="container text-center">
-            <h1 className="display-4">judul yee</h1>
+            <h1 className="display-4">Groceries App</h1>
             {
                 props.children
             }

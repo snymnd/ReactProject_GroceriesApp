@@ -2,11 +2,9 @@
     height: 100%;
 }
 #Card .card-image{
-    height: auto;
+    height: 300px;
     margin: 0px auto;
     text-align: center;
-    width: 100%;
-    height: 50%;
 }
 #Card img{
     object-fit: contain;

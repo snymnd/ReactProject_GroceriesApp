@@ -49,7 +49,7 @@ function Main() {
     }
 
     
-    let num = Number(total) // The Number() only visualizes the type and is not needed
+    let num = Number(total)
     let roundedString = num.toFixed(2)
     let rounded = Number(roundedString)
 
@@ -58,7 +58,7 @@ function Main() {
             <Jumbotron>
                 <SearchItem  changeHandler = {changeHandler} submitHandler ={ submitHandler} />
             </Jumbotron>
-            <div className='row'>
+            <div className={`row ${itemsFound==0?'d-none':''}`}>
                 <div className='row mt-5 col-8 ms-auto'>
                     {
                         itemsFound.length>0  ?
@@ -67,7 +67,7 @@ function Main() {
                     }          
                 </div>
         
-                <div className='mt-5 col-2 me-auto'>
+                <div className='mt-5 col-2 me-auto card border card border-dark rounded'>
                     <h3>My Cart</h3>
 
                     {cartItems.map(item => 
